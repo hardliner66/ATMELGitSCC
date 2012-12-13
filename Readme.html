@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Yiyi Sun">
+    <title>Git Source Control Provider</title>
+    <style type="text/css">
+        body{font:14px/20px arial;}
+        h1{font-size:1.3em;}
+        h2{font-size:1.1em;}
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1>Git Source Control Provider</h1>
+    Please donate to support this project.
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=KBCLF3PZD6C98&amp;lc=US&amp;item_name=Git%20Source%20Control%20Provider&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted">
+    <img alt="Donate" style="border:0px; vertical-align:middle" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" title="Donate" /></a><br />
+
+    <h2>Notes for Git 1.7.10+ Users</h2>
+    <p>Since 1.7.10, <strong>Git for Windows</strong> supports UTF-8 encoding internally. If you are using non-ASCII file names, 
+    please follow <a href="https://github.com/kblees/git/wiki">this page</a> to see how to update your Git settings and how to migrate your repositories.</p>
+    <h2>Change Logs</h2>
+     <strong>V1.0.0</strong>
+    <ul>
+        <li>Add support to use Visual Studio's diff window (by Duncan Smart)</li>
+        <li>Prompt user to save files before commit</li>
+        <li>Prompt user to set name and email for git, if not already</li>
+        <li>Pending Changes commit not showing hooks errors/messages (by Javier Castro) </li>
+        <li>Support bulk file deletion (by Javier Castro) </li>
+        <li>Use new icons for git and git extensions</li>
+        <li>Merge pull requests, #30, #34, #36, #38 from github</li>
+        <li><a href="http://gitscc.codeplex.com/workitem/17798">Allow commit of selected changes via Ctrl+Enter</a></li>
+        <li><a href="http://gitscc.codeplex.com/workitem/17795">Automatically save items when refreshing</a>
+        <li><a href="http://gitscc.codeplex.com/workitem/17793">commit-msg hook error not visible (by Javier Castro)</a>
+        <li><a href="http://gitscc.codeplex.com/workitem/17792">Git Refresh not working in Pending Changes when auto refresh is disabled</a></li>
+    </ul>
+    <strong>V 0.9.6.1 </strong>
+    <ul>
+        <li>Rebuild in release mode and write to error log file in Release mode</li>
+    </ul>
+    <strong>V 0.9.6 (acb0278)</strong>
+    <ul>
+        <li>Add support to local workspace of TFS 2012</li>
+        <li>Add UI to allow configure user name and password for Git</li>
+        <li>Bug fix: <a href="http://gitscc.codeplex.com/workitem/17789">Please allow amend with no changes</a></li>
+        <li>Bug fix: <a href="http://gitscc.codeplex.com/workitem/17788">Provider not detecting being in a repo</a></li>
+        <li>Bug fix: <a href="http://gitscc.codeplex.com/workitem/17774">Solution no longer identifies as Git controlled</a></li>
+    </ul>
+    <strong>V 0.9.5 (3758789)</strong>
+     <ul>
+        <li>Detect binary and large files in pending changes window</li>
+        <li>Add Sign-off option in pending changes window</li>
+        <li>Add context menu for ignoring files in pending changes window</li>
+        <li>Add commit list for file in commit details window</li>
+        <li>Add multiple lines of commit message display in commit details window</li>
+        <li>Add file blame function in commit details window</li>
+        <li>Bug fix: <a href="http://gitscc.codeplex.com/workitem/17782">Multiline Commit Message</a></li>
+        <li>Bug fix: <a href="http://gitscc.codeplex.com/workitem/17781">Enhance Pending Changes window</a></li>
+        <li>Bug fix: <a href="http://gitscc.codeplex.com/workitem/17776">Hang on click in items (.ico) in Pending changes Window</a></li>
+     </ul>
+
+    <strong>V 0.9.4 (0cf9485)</strong>
+    <ul>
+        <li>Detect Git for Windows Path in pending changes window</li>
+        <li>Add option to disable UTF-8 file names (for Git 1.7.10+)</li>
+        <li>Change pre-load to UI context instead of UIContextGuids.SolutionExists</li>
+        <li>Fix commit text box line height</li>
+        <li>Dragon Tool: Fix folder browse dialog for saving patches between two commits</li>
+        <li>Dragon Tool: Remove git console</li>
+        <li>Dragon Tool: Add custom Chrome</li>
+    </ul>
+    <strong>V 0.9.3 (f609cdd)</strong>
+    <ul>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17538">
+            VS 11 Beta crash when reopening auto-hidden &quot;GIT PENDING CHANGES&quot; window</a></li>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17437">
+            tags not displayed</a></li>
+        <li>Merge Pull Request:
+            <a href="https://github.com/yysun/Git-Source-Control-Provider/pull/26">
+            Fix GitFileStatusTracker returning New instead of Ignored</a>
+        </li>
+        <li>Merge Pull Request:
+                <a href="https://github.com/yysun/Git-Source-Control-Provider/pull/24">
+                Handle files modified after being staged</a>
+        </li>
+        <li>Dragon Tool: Display Author name instead of committer name</li>
+    </ul>
+
+    <strong>V 0.9.2 (aa64b75)</strong>
+    <ul>
+        <li>Dragon Tool: Add console with git command intellisense (with some limitations)</li>
+        <li>Dragon Tool: Add support to accept drag and drop file from file explorer</li>
+        <li>Dragon Tool: Add button to launch Git Bash</li>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17379">
+            reserve staging checkboxes when refreshing</a></li>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17391">
+            Missing Intellisense</a></li>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17276">
+            Git history view scrolling and scrollbars</a></li>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17438">
+            Simplified view mode Issue</a></li>
+    </ul>
+
+    <strong>V0.9.1 (1def890) </strong> 
+    <ul>
+    <li>Change History Window to be a stand alone program - Dragon<ul>
+        <li>add/delete tag</li>
+        <li>add/delete/checkout branch</li>
+        <li>scroll to branch/tag</li>
+        <li>refresh button</li>
+        <li>search commits</li>
+        <li>select and compare too commits</li>
+        <li>Archive (export) commit</li>
+        <li>create patch</li>
+        </ul>
+        </li>
+        <li>Add Git Extensions menus to Pending Changed tool window </li>
+        <li>Add GitTortoise menus to Pending Changed tool window</li>
+        <li>Add Git - About ... menu, 
+            <a 
+            href="http://gitscc.codeplex.com/workitem/17051">Referencing 
+        Git hash when building</a></li>
+        <li>Add Option to disable auto load,
+            <a href="http://gitscc.codeplex.com/workitem/16904">Automatically switch to the Git provider when loading a Git-controlled solution</a></li>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17101">autocrlf warning prevents commits from Git Pending Changes</a></li>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17213">Show Changes Window Disappear</a></li>
+        <li>Buf Fix: <a href="http://gitscc.codeplex.com/workitem/17277">Git status is not refreshed</a></li>
+        <li>Bug Fix: <a href="http://gitscc.codeplex.com/workitem/17322">config core.ignorecase true</a></li>
+        <li>Merge pull request #19 from GitHub</li>
+    </ul>
+
+    For more information, please visit the project Site: <a href="http://gitscc.codeplex.com">http://gitscc.codeplex.com</a>
+    <br />
+    Welcome to fork the source code: <a href="https://github.com/yysun/Git-Source-Control-Provider">https://github.com/yysun/Git-Source-Control-Provider</a><br />
+</div>
+</body>
+</html>
